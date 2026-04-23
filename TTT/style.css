@@ -1,0 +1,100 @@
+:root{
+--primary:#2563eb;
+--dark:#0f172a;
+--light:#ffffff;
+--bg:#f1f5f9;
+}
+
+body.dark{
+--bg:#0f172a;
+--light:#1e293b;
+color:white;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif;}
+
+body{background:var(--bg);}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+padding:20px 40px;
+background:var(--dark);
+color:white;
+}
+
+nav a{
+margin-left:15px;
+color:white;
+text-decoration:none;
+}
+
+nav a:hover{color:var(--primary);}
+
+/* HERO */
+.hero{
+padding:100px;
+text-align:center;
+background:linear-gradient(45deg,#2563eb,#38bdf8);
+color:white;
+}
+
+/* GRID */
+.grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+padding:30px;
+}
+
+/* CARD */
+.card{
+background:var(--light);
+padding:20px;
+margin:15px;
+width:250px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:.3s;
+}
+
+.card:hover{transform:translateY(-5px);}
+
+/* BUTTON */
+button{
+width:100%;
+padding:10px;
+border:none;
+background:var(--primary);
+color:white;
+margin-top:10px;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* INPUT */
+input,textarea{
+width:100%;
+padding:10px;
+margin-top:10px;
+}
+
+/* BADGE */
+#cart-count{
+background:red;
+padding:3px 8px;
+border-radius:50%;
+}
+
+/* TOAST */
+.toast{
+position:fixed;
+bottom:20px;
+right:20px;
+background:black;
+color:white;
+padding:10px;
+opacity:0;
+}
+.toast.show{opacity:1;}

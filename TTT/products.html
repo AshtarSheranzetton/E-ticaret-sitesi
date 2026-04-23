@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>ProShop</h1>
+<nav>
+<a href="index.html">Ana Sayfa</a>
+<a href="products.html">Ürünler</a>
+<a href="cart.html">Sepet <span id="cart-count"></span></a>
+<a href="about.html">Hakkımızda</a>
+<a href="contact.html">İletişim</a>
+<a onclick="toggleDark()">🌙</a>
+</nav>
+</header>
+
+<div class="card">
+<h3>Yorumlar</h3>
+<input id="comment" placeholder="Yorum yaz">
+<button onclick="addComment()">Gönder</button>
+<div id="comments"></div>
+</div>
+
+
+
+
+
+<div class="search-box">
+<input id="search" onkeyup="searchProduct()" placeholder="Ara...">
+</div>
+
+
+<div id="products" class="grid"></div>
+
+<div id="toast" class="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html> 

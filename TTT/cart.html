@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>ProShop</h1>
+<nav>
+<a href="index.html">Ana Sayfa</a>
+<a href="products.html">Ürünler</a>
+<a href="cart.html">Sepet <span id="cart-count"></span></a>
+<a href="about.html">Hakkımızda</a>
+<a href="contact.html">İletişim</a>
+<span id="user-area"></span>
+<a onclick="toggleDark()">🌙</a>
+</nav>
+</header>
+
+<div id="cart" class="grid"></div>
+
+<h2 id="total"></h2>
+
+<div style="text-align:center;">
+<button onclick="checkout()">Ödemeye Git</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
